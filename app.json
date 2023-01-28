@@ -1,0 +1,40 @@
+{
+  "author": "Marcus Rejås",
+  "licence": "MIT",
+  "input": {
+	  "ip_address": {
+		  "required": true,
+		  "name": "Radiator ip address",
+		  "type": "text"
+	  },
+	  "token": {
+		  "required": true,
+		  "name": "Radiator token",
+		  "type": "text"
+	  },
+	  "name": {
+		  "required": true,
+		  "name": "Radiator name",
+		  "type": "text"
+	  },
+	  "interval": {
+		  "required": true,
+		  "name": "Fetch interval",
+		  "description": "The interval between polls for temperature.",
+		  "type": "number"
+	  }
+  },
+  "guide": [
+    {
+      "id": "stage_1",
+      "title": "Radiator data",
+      "description": "Enter the infromation about the radiator",
+      "input_fields": [
+		  "name",
+		  "ip_address",
+		  "token",
+		  "interval"
+      ]
+    }
+  ]
+}
